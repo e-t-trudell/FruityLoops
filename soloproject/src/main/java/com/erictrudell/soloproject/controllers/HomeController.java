@@ -53,7 +53,7 @@ public class HomeController {
 //    	System.out.println(createdUser);
         if(createdUser == null) {
             model.addAttribute("newLogin", new LoginUser());
-            redirectAtt.addFlashAttribute("regError", "Please register to continue.");
+            redirectAtt.addFlashAttribute("regError", "Please complete registration to continue.");
             return "redirect:/";
         }
 //      You have already created the user in the service in register method
